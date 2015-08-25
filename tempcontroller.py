@@ -12,9 +12,9 @@ target_temp = 62
 #overshoot value.  Number of degrees below target value to hit with cooler
 offset = 0
 #ontime is the number of seconds to run the pump
-ontime = 30
+ontime = 120
 #offtime is the number of seconds to wait between runs
-offtime = 600
+offtime = 480
 #number of seconds to wait between temp checks.  
 frequency = ontime + offtime
 
@@ -70,6 +70,7 @@ def insteon_direct(ip = "192.168.1.162", port = "25105", username = "AvJOqyPbu0"
     auth=HTTPBasicAuth( username, password )
     url = u'http://%s:%s/3?%s=I=3' % ( ip, port, command )
     #utils.log( url )
+    print url
     r = requests.post(url=url, auth=auth)
 
 print('controller started')
