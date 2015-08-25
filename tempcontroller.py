@@ -14,7 +14,7 @@ offset = 0
 #ontime is the number of seconds to run the pump
 ontime = 120
 #offtime is the number of seconds to wait between runs
-offtime = 480
+offtime = 1200
 #number of seconds to wait between temp checks.  
 frequency = ontime + offtime
 

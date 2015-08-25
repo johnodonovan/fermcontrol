@@ -182,7 +182,7 @@ trace1 = Scatter(
     y=[],
     mode='lines+markers',
     stream=dict(stream), 
-    name='RedBox1'        # (!) embed stream id, 1 per trace
+    name='Ambient'        # (!) embed stream id, 1 per trace
 )
 
 trace2 = Scatter(
@@ -190,7 +190,7 @@ trace2 = Scatter(
     y=[],
     mode='lines+markers',
     stream=dict(stream2), 
-    name='Ambient'        # (!) embed stream id, 1 per trace
+    name='RedBox1'        # (!) embed stream id, 1 per trace
 )
 
 trace3 = Scatter(
